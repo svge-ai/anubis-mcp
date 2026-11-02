@@ -1,3 +1,21 @@
-# Whole tokens, case-insensitive.
+# Whole tokens, case-insensitive. A line in slashes is a regex.
 liveskill
 bizmojo
+thread
+turn
+oban
+lease
+fencing
+approval
+analysis
+deal
+skill
+workspace
+credit
+ledger
+sandbox
+connector
+asset
+svge
+/(?:[a-z0-9-]+\.)+internal(?![a-z0-9_-])/
+/SVG-\d+/

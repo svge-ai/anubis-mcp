@@ -138,11 +138,11 @@ We have build some elixir implementation examples using `plug` based and `phoeni
 2. [echo-elixir](/examples/echo-elixir/README.md): `phoenix` based MCP server using streamable_http
 3. [ascii-server](/examples/ascii/README.md): `phoenix_live_view` based MCP server using streamable_http and UI
 
-## Fork
+## This fork
 
 `main` is an exact mirror of [upstream](https://github.com/zoedsoupe/anubis-mcp) and stays the default branch. Fork work lands on `svge-main`, which was cut from upstream `cdb9cd6` (2.2.0), not from the tip of `main`. Pull requests for that work target `svge-main`.
 
-The sync process and the current status are in [SVGE.md](SVGE.md). `mix anubis.boundary` fails the build if a denied word leaks into the tree.
+The sync process and the current status are in [SVGE.md](SVGE.md). `mix anubis.boundary` fails the build if a denied word leaks into `lib/` or `test/`.
 
 ## License
 

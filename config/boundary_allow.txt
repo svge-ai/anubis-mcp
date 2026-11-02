@@ -1,4 +1,0 @@
-# Paths only. A path matches itself and everything under it.
-
-config/boundary_deny.txt
-test/fixtures/boundary

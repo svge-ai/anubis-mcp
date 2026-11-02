@@ -1,12 +1,12 @@
 defmodule Mix.Tasks.Anubis.Boundary do
-  @shortdoc "Fail if a denied word leaked into the tree"
+  @shortdoc "Fail if a denied word or dependency leaked into the tree"
   @moduledoc """
-  Scans the working tree for denied words.
+  Scans `lib/` and `test/` for denied words, and checks `mix.exs` deps.
 
       mix anubis.boundary
 
-  Words come from `config/boundary_deny.txt`. Paths in
-  `config/boundary_allow.txt` are skipped. The allow list holds paths only.
+  Words come from `config/boundary_deny.txt`. A `/regex/` line is a regex.
+  `config/boundary_allow.exs` allows a single file, line, and word.
   """
 
   use Mix.Task
