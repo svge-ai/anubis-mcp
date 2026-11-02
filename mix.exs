@@ -1,7 +1,7 @@
 defmodule Anubis.MixProject do
   use Mix.Project
 
-  @version "2.2.0"
+  @version "2.2.0-svge.1"
   @source_url "https://github.com/zoedsoupe/anubis-mcp"
 
   def project do
@@ -74,7 +74,7 @@ defmodule Anubis.MixProject do
   defp aliases do
     [
       setup: ["deps.get", "compile --force"],
-      lint: ["format --check-formatted", "credo --strict", "dialyzer"],
+      lint: ["format --check-formatted", "credo --strict", "anubis.boundary", "dialyzer"],
       format_doc: ["cmd npx prettier -w ./**/*.md"]
     ]
   end
