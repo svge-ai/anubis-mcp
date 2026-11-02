@@ -74,7 +74,7 @@ defmodule Anubis.MixProject do
   defp aliases do
     [
       setup: ["deps.get", "compile --force"],
-      lint: ["format --check-formatted", "credo --strict", "dialyzer"],
+      lint: ["format --check-formatted", "credo --strict", "anubis.boundary", "dialyzer"],
       format_doc: ["cmd npx prettier -w ./**/*.md"]
     ]
   end

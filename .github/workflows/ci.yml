@@ -4,9 +4,11 @@ on:
   push:
     branches:
       - main
+      - svge-main
   pull_request:
     branches:
       - main
+      - svge-main
 
 jobs:
   lint:
@@ -67,6 +69,9 @@ jobs:
 
       - name: Run Credo
         run: mix credo --strict
+
+      - name: Check the fork boundary
+        run: mix anubis.boundary
 
   static-analysis:
     runs-on: ubuntu-latest
